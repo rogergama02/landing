@@ -1,0 +1,157 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Seção Hero */
+.hero {
+    position: relative;
+    height: 100vh; /* Garante que a seção ocupe toda a altura da viewport */
+    background: url('sua-imagem.jpg') no-repeat center center/cover; /* Imagem de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Garante que o conteúdo não transborde da seção */
+}
+
+.code-icon {
+    position: absolute;
+    top: 20%; /* Ajusta a posição vertical do ícone para cima */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o ícone horizontalmente e ajusta a posição vertical */
+    z-index: 0; /* Garante que o ícone fique atrás do conteúdo */
+}
+
+.code-icon img {
+    width: 300px; /* Ajusta o tamanho da imagem do ícone */
+    height: auto; /* Mantém a proporção da imagem */
+    opacity: 0.1; /* Define a opacidade para garantir que o ícone não seja muito chamativo */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique sobre o ícone */
+    color: black; /* Define a cor do texto como preto */
+}
+
+.hero-content h1,
+.hero-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* Remover o botão "Saiba Mais" */
+.hero-content .btn {
+    display: none; /* Remove o botão da visualização */
+}
+
+/* Seções Informativas */
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.info-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Seção geral */
+section {
+    padding: 100px 20px;
+    margin-top: 50px; /* Ajuste de espaço para o menu fixo */
+}
+
+h4 {
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+p {
+    margin-top: 15px; /* Espaço acima do parágrafo */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo para separar seções */
+}
+
+.contact-logo {
+    width: 24px; /* Ajuste o tamanho da logo conforme necessário */
+    height: 24px; /* Ajusta a altura para manter a proporção */
+    vertical-align: middle; /* Alinha a imagem com o texto */
+    margin-right: 8px; /* Espaço entre a logo e o texto */
+}
+
+#contato a {
+    color: black; /* Define a cor do texto dos links como preto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+#contato a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+}
